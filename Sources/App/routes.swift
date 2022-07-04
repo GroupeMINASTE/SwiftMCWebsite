@@ -1,14 +1,10 @@
 import Fluent
 import Vapor
 
-func routes(_ app: Application) throws {
-    app.get { req in
-        return req.view.render("index", ["title": "Hello Vapor!"])
-    }
-
-    app.get("hello") { req -> String in
-        return "Hello, world!"
-    }
-
-    try app.register(collection: TodoController())
+func routes(_ app: RoutesBuilder) throws {
+    // Static pages
+    app.get("", use: HomeController.root)
+    app.get(":locale", use: HomeController.root)
+    app.get("home", use: HomeController.get)
+    app.get(":locale", "home", use: HomeController.get)
 }

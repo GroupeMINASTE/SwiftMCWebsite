@@ -1,0 +1,71 @@
+.logo {
+  width: 128px;
+  height: 128px;
+  border-radius: 18%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+.home-background {
+  background-image: url("/img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: .75rem;
+}
+
+.feature .bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+.icon-link > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  transition: transform .25s ease-in-out;
+  fill: currentColor;
+}
+.icon-link:hover > .bi {
+  transform: translate(.25rem);
+}
+
+.text-custom {
+  color: #ea3a2b;
+}
+
+.bg-custom {
+  background-color: #ea3a2b;
+}
+
+.link-custom {
+  color: #ea3a2b;
+}
+.link-custom:hover, .link-custom:focus {
+  color: #ba0a00;
+}
+
+.btn-custom {
+  background-color: #ea3a2b;
+  border-color: #ea3a2b;
+  color: #fff;
+}
+.btn-custom:hover, .btn-custom:focus {
+  background-color: #ba0a00;
+  border-color: #ba0a00;
+  color: #fff;
+}

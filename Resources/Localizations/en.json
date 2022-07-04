@@ -1,0 +1,16 @@
+{
+    "home_title": "Home",
+    "home_description": "A Minecraft server and proxy written from scratch in Swift.",
+    "home_get_started": "Get started",
+    "home_demo": "Demo",
+    "home_source_code": "Source code",
+    "home_demo_description": "Try SwiftMC by connecting to our demo server.",
+    "home_demo_online": "Online",
+    "footer_download": "Download",
+    "footer_platforms": "Platforms",
+    "footer_platforms_contact": "Contact us",
+    "footer_resources": "Resources",
+    "footer_contribute": "Contribute",
+    "footer_contribute_software": "Software",
+    "footer_contribute_website": "Website"
+}

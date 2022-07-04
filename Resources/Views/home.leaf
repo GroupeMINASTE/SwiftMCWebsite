@@ -1,0 +1,42 @@
+#extend("template"):
+    #export("content"):
+        <section class="p-5 home-background text-light">
+            <div class="container">
+                <div class="px-4 py-5 my-5 text-center">
+                    <h1 class="display-5 fw-bold">SwiftMC</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">#localize("home_description")</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a href="/#locale()/home#getstarted" class="btn btn-custom btn-lg px-4 gap-3">#localize("home_get_started")</a>
+                            <a href="/#locale()/home#demo" class="btn btn-outline-secondary btn-lg px-4">#localize("home_demo")</a>
+                            <a href="https://github.com/GroupeMINASTE/SwiftMC" class="btn btn-outline-secondary btn-lg px-4">#localize("home_source_code")</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5" id="demo">
+            <div class="container">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-lg-6">
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded">
+                            <img src="/img/logo-rounded.png" alt="Logo" width="44" height="44" class="flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">demo.swiftmc.org <span class="badge rounded-pill bg-success">#localize("home_demo_online")</span></h6>
+                                    <p class="mb-0 opacity-75">#(serverInfo.description.text)</p>
+                                </div>
+                                <small class="opacity-50 text-nowrap">#(serverInfo.players.online)/#(serverInfo.players.max)</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 fw-bold lh-1 mb-3">#localize("home_demo")</h2>
+                        <p class="lead">#localize("home_demo_description")</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    #endexport
+#endextend

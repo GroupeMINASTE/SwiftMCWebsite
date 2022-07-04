@@ -13,6 +13,8 @@ let package = Package(
         .package(url: "https://github.com/vapor/fluent-mysql-driver.git", from: "4.0.0"),
         .package(url: "https://github.com/vapor/leaf.git", from: "4.0.0"),
         .package(url: "https://github.com/GroupeMINASTE/SwiftMC.git", branch: "master"),
+        .package(url: "https://github.com/vapor-community/Lingo-Vapor.git", from: "4.0.0"),
+        .package(url: "https://github.com/brokenhandsio/leaf-error-middleware.git", from: "4.0.0"),
     ],
     targets: [
         .target(
@@ -23,6 +25,8 @@ let package = Package(
                 .product(name: "Leaf", package: "leaf"),
                 .product(name: "Vapor", package: "vapor"),
                 .product(name: "SwiftMC", package: "SwiftMC"),
+                .product(name: "LingoVaporLeaf", package: "Lingo-Vapor"),
+                .product(name: "LeafErrorMiddleware", package: "leaf-error-middleware"),
             ],
             swiftSettings: [
                 // Enable better optimizations when building in Release configuration. Despite the use of
