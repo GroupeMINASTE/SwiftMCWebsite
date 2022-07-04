@@ -9,6 +9,7 @@ import LeafErrorMiddleware
 // configures your application
 public func configure(_ app: Application) throws {
     // Get port
+    app.http.server.configuration.hostname = Environment.get("HOSTNAME") ?? "0.0.0.0"
     app.http.server.configuration.port = Int(Environment.get("PORT") ?? "8080") ?? 8080
     
     // Database
